@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <iframe src="https://open.spotify.com/embed/playlist/4OIVU71yO7SzyGrh0ils2i" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-   
-
+  
     <div class="clock">
       <div class="display">
 </div>
@@ -46,6 +44,8 @@
         clock.textContent = hr + ':' + min + ':' + sec + " " + day;
       });
     </script>
+
+    <iframe src="https://open.spotify.com/embed/playlist/4OIVU71yO7SzyGrh0ils2i" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
  
   </body>
   <p style="color:blue">I love you mum</p>
@@ -55,6 +55,55 @@
 <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+
+      @media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+      /* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
 
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
