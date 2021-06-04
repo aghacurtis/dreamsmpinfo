@@ -1,222 +1,46 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en" >
 <head>
-	<style>
-		ul {
-		
+  <meta charset="UTF-8">
+  <title>CodePen - Perspective Split Text Menu Hover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/183516/gilroy-webfont.css'><link rel="stylesheet" href="./style.css">
 
-  list-style-type: none;
-  margin: 0;
-  padding: 0			;
-  overflow: hidden;
-
-}
-
-button {
-  float: left;
-}
-
-button a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0px;
-  text-decoration: none;
-}
-
-button a:hover {
-  background-color: #111111;
-}
-
-@charset "utf-8";
-/*Button
------------------*/
-button{
-  outline:0; 
-  font-size:1em;
-  font-weight:600;
-  background:#fff;
-  border:none;
-  padding:2em 4em;
-  transition:all .3s ease-out; 
-  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
-    1px 1px 0 0 #d98e20,
-    2px 2px 0 0 #d98e20,
-    3px 3px 0 0 #d98e20,
-    4px 4px 0 0 #d98e20,
-    5px 5px 0 0 #d98e20,
-    6px 6px 0 0 #d98e20,
-    7px 7px 0 0 #d98e20,
-    8px 8px 0 0 #d98e20,
-    9px 9px 0 0 #d98e20,
-    10px 10px 0 0 #d98e20,
-    11px 11px 0 0 #d98e20,
-    12px 12px 0 0 #d98e20;
-}
-button:hover{
-  color:#444;
-}
-button:active{
-  color:#222;
-  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
-    1px 1px 0 0 #d98e20,
-    2px 2px 0 0 #d98e20,
-    3px 3px 0 0 #d98e20,
-    4px 4px 0 0 #d98e20,
-    5px 5px 0 0 #d98e20;
-}
-/*General Styling
------------------*/
-body{
-	width:100%;
-	min-height:100%;
-	background-color:#FFA726;
-	color:#eee;
-}
-main{
-	
-	margin:auto;
-	width:100%;
-	height:100%;
-  text-align:center;
-  padding:45vh 0;
-}</style>
 </head>
-
-	<body>
-		<div class="center">
-		<img  align: center; src="https://fontmeme.com/permalink/210603/ee7e6fbd417e9b3ec9c59ed1b105f44b.png" width="430"> 
-	    </div>
-
-<div class="center">
-<ul>
-  <li>  <button onclick="window.location.href='browser.html'">my<br> browser</button></li>
-  <li>  <button onclick="window.location.href='dreamsmphome.html'"> fanpage</button></li>
-  <li>  <button onclick="window.location.href='comingsoon.html'">coming<br>soon</button></li>
-  <li>  <button onclick="window.location.href='New%20folder/index.html'">portfolio</button></li>
-  <li>  <button onclick="window.location.href='mum.html'">thing for <br>my mum</button></li>
-</ul>
+<body>
+<!-- partial:index.partial.html -->
+<!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
+<div class="Menu">
+  <ul class="Menu-list" data-offset="10">
+    <li class="Menu-list-item" data-offset="20" onclick=window.location.href='dreamsmphome.html'>
+      fanpage
+      <span class="Mask"><span>fanpage</span></span>
+      <span class="Mask"><span>fanpage</span></span>
+    </li>
+    <li class="Menu-list-item" data-offset="16"onclick= onclick=window.location.href="file:///P:/downloads/website/editingportfolio.html">
+     editing portfolio
+      <span class="Mask"><span>editing portfolio</span></span>
+      <span class="Mask"><span>editing portfolio</span></span>
+    </li>
+    <li class="Menu-list-item" data-offset="12" onclick=window.location.href="comingsoon.html">
+    about me 
+      <span class="Mask"><span>about me</span></span>
+      <span class="Mask"><span>about me</span></span>
+    </li>
+    <li class="Menu-list-item" data-offset="8" onclick=window.location.href="browsers.html">
+      my browser
+      <span class="Mask"><span>my browser</span></span>
+      <span class="Mask"><span>my browser</span></span>
+      <li class="Menu-list-item" data-offset="8" onclick=window.location.href='mum.html'>
+     Rasberry pi project
+      <span class="Mask"><span> Rasberry pi project</span></span>
+      <span class="Mask"><span> Rasberry pi project</span></span>
+    </li>
+    </li>
+  </ul>
 </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
 
-   </body>
-
-<head>
-	<style>
-		body{
-			background-image:url("https://image.freepik.com/free-photo/abstract-color-paper-creative-colorful-pastel-paper-background_6529-179.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
- font-color:#red;
- font-size: 20pt;
- font-family: "Inconsolata", monospace;;
-		}
-
-		
-}
-p{
- font-family: "Inconsolata", monospace;
-font-size:30px;
-}
-img{
-	size:10px;
-}
-.center {
-
-  margin: auto;
-  width: 30%;
-  padding: 50px;}
-/* On smaller screens, decrease text size */
-
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-
-  ul li {
-      list-style: none;
-    display:inline;
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0			;
-  overflow: hidden;
-
-}
-
-button {
-  float: left;
-}
-
-button a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0px;
-  text-decoration: none;
-}
-
-button a:hover {
-  background-color: #111111;
-}
-
-@charset "utf-8";
-/*Button
------------------*/
-button{
-  outline:0; 
-  font-size:1em;
-  font-weight:600;
-  background:#fff;
-  border:none;
-  padding:2em 4em;
-  transition:all .3s ease-out; 
-  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
-    1px 1px 0 0 #d98e20,
-    2px 2px 0 0 #d98e20,
-    3px 3px 0 0 #d98e20,
-    4px 4px 0 0 #d98e20,
-    5px 5px 0 0 #d98e20,
-    6px 6px 0 0 #d98e20,
-    7px 7px 0 0 #d98e20,
-    8px 8px 0 0 #d98e20,
-    9px 9px 0 0 #d98e20,
-    10px 10px 0 0 #d98e20,
-    11px 11px 0 0 #d98e20,
-    12px 12px 0 0 #d98e20;
-}
-button:hover{
-  color:#444;
-}
-button:active{
-  color:#222;
-  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
-    1px 1px 0 0 #d98e20,
-    2px 2px 0 0 #d98e20,
-    3px 3px 0 0 #d98e20,
-    4px 4px 0 0 #d98e20,
-    5px 5px 0 0 #d98e20;
-}
-/*General Styling
------------------*/
-body{
-	width:100%;
-	min-height:100%;
-	background-color:#FFA726;
-	color:#eee;
-}
-main{
-	
-	margin:auto;
-	width:100%;
-	height:100%;
-  text-align:center;
-  padding:45vh 0;
-}
-
-
- 
-
-</style>
-</head>
-</html>	
+</body>
+</html>
