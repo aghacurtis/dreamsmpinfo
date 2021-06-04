@@ -1,0 +1,41 @@
+logos button
+	                <div class="col-md-6 col-xs-6">
+                       <div class="allprojects-bg" >
+				           <a class="btn-ltstlk" href="logos.html" role="button">LOGOS</a>				
+                       </div>
+	                </div>
+				</div>	
+        </div>
+
+back to all works button
+
+ <div class="row">
+	                <div class="col-md-12 col-xs-12">
+                       <div class="allprojects-lgs-bg" >
+				           <a class="btn-allprojects" href="works.html" role="button">BACK TO ALL WORKS</a>				
+                       </div>
+	                </div>
+				</div>
+
+video for money heist 
+
+<video width="320" height="240" controls>
+  <source src="img/covers/y2mate.com - Timeline 1_1080p.mp4" type="video/mp4">
+  Your browser does not support the video element. Kindly update it to latest version.
+</video >		
+
+image from moneyheist
+
+   <img src="img/covers/bd692965b62540e11d8e639270c45c92.webp" alt="" class="img-lg-col2">
+
+
+home page buttons
+
+
+
+<ul>
+  <li>  <button onclick="window.location.href='dreamsmphome.html'> fanpage</button></li>
+  <li>  <button onclick="window.location.href='coming soon.html'>coming <br>soon!</button></li>
+  <li>  <button onclick="window.location.href='New%20folder/index.html'>thing for<br>mum</button></li>
+  <li>  <button onclick="window.location.href='mum.html'>thing for<br>mum</button></li>
+  </ul>
