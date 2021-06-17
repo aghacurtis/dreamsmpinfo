@@ -1,0 +1,57 @@
+.u-section-1 {
+  background-image: url("images/gradient-blue-to-white-wallpaper-1.jpg");
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 500px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: Alata;
+  margin: 7px auto 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: Alata;
+  margin: 152px auto 60px 391px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 412px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 322px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 316px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 247px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 237px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 185px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 149px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 116px;
+  }
+}
